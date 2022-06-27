@@ -1,0 +1,154 @@
+body {
+  background-color: #00002d;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.welcome {
+  text-align: center;
+  padding: 4em;
+  padding-top: 0;
+}
+
+.welcome h1 {
+  padding-top: 2rem;
+  font-size: xxx-large;
+  border-top: 5px solid rgba(121, 121, 121, 0.5);
+  border-top-left-radius: 15px;
+}
+
+.welcome p {
+  padding-bottom: 2rem;
+  font-size: xx-large;
+  border-bottom: 5px solid rgba(121, 121, 121, 0.5);
+  border-bottom-right-radius: 15px;
+}
+
+li {
+  background-color: rgba(121, 121, 121, 0.2);
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: min(100% - 2rem, 700px);
+  margin-inline: auto;
+}
+
+.links {
+  margin-top: -5rem;
+}
+
+.links a {
+  display: block;
+  font-size: larger;
+  text-align: center;
+  padding: 2.5rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.links a:hover {
+  color: pink;
+}
+
+/* taken from https://jhancock532.github.io/link-hover-effects/ */
+.link--transform-underline-from-middle {
+  padding-bottom: 0.2ex;
+  display: inline-block;
+  position: relative;
+}
+.link--transform-underline-from-middle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0.25em;
+  background-color: pink;
+  transform: scaleX(0);
+  transition: transform 0.6s;
+}
+.link--transform-underline-from-middle:hover::before {
+  transform: scaleX(1);
+}
+.link--transform-underline-slide-over-left {
+  /* Shout out to Sam Larsen-Disney
+     This effect is derived from his website https://sld.codes/ */
+  padding-bottom: 0.2ex;
+  display: inline-block;
+  position: relative;
+}
+.link--transform-underline-slide-over-left::before {
+  content: "";
+  position: absolute;
+  transform-origin: center left;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.25em;
+  background-color: pink;
+  transform: scaleX(0);
+  transition: transform 0.6s;
+}
+.link--transform-underline-slide-over-left:hover::before {
+  transform-origin: center right;
+  transform: scaleX(1);
+}
+.link--transform-underline-slide-over-right {
+  padding-bottom: 0.2ex;
+  display: inline-block;
+  position: relative;
+}
+.link--transform-underline-slide-over-right::before {
+  content: "";
+  bottom: 0;
+  transform-origin: center right;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0.25em;
+  background-color: pink;
+  transform: scaleX(0);
+  transition: transform 0.6s;
+}
+.link--transform-underline-slide-over-right:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+.link--transform-underline-pop-up {
+  /* Shout out to Eli Fitch
+     This effect is derived from his website http://eli.wtf/ */
+  padding: 0.2ex 0;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: color 0.6s;
+}
+.link--transform-underline-pop-up:hover {
+  color: white;
+}
+.link--transform-underline-pop-up::before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  height: 0.25em;
+  width: 100%;
+  background-color: pink;
+  transition: height 0.6s, width 0.6s, transform 0.6s;
+}
+.link--transform-underline-pop-up:hover::before {
+  height: 100%;
+  width: calc(100% + 0.5em);
+  transform: translateX(-0.25em) skew(-7deg);
+}
+
+/*# sourceMappingURL=css.css.map */

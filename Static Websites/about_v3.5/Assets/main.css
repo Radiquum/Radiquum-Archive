@@ -1,0 +1,138 @@
+html::before {
+  content: ' ';
+  display: block;
+
+  background-image: linear-Gradient(45deg, #a5d0fb, #ffafcc); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -10;
+
+}
+
+.fade-in {
+  display: inline-block;
+  color: black;
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.top-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -10;
+}
+
+.top-wave svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 95px;
+}
+
+.top-wave .shape-fill {
+  fill: #ffafcc;
+}
+
+img {
+  border-radius: 50%;
+  width: 264px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1rem auto;
+}
+
+.text {
+  color: white;
+  font-family: "Gilroy light";
+  font-size: 1.5rem;
+}
+
+h1 {font-family: "Gilroy ExtraBold";}
+
+p {margin-left: 0.5rem;}
+
+.headline {font-size: 2.5rem;}
+
+.text a {
+  margin-left: 0.4rem;
+  text-decoration: none;
+  color: #ffffff7d;
+  transition: 0.3s all;
+}
+
+.text a:hover {color: #ffffff;}
+
+bio, content {
+  background-color: #00000039;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-right: auto;
+  border-radius: 25px;
+  backdrop-filter: blur(3px);
+}
+
+.text {font-size: 1.5rem;}
+
+.text .headline {font-size: 3rem;}
+
+@media (min-width: 60rem) {
+
+  .flex-container {flex-direction: row;}
+
+  bio, content {margin-left: 1rem;}
+
+  .top-wave svg {
+    width: calc(100% + 1.3px);
+    height: 130px;
+  }
+
+  img {width: 350px;}
+  
+  .text .headline {font-size: 4.5rem;}
+
+}
+
+@font-face {
+  font-family: "Gilroy light";
+  src: url(Fonts/Gilroy-Light.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: url(Fonts/Gilroy-ExtraBold.otf);
+  font-display: swap;
+}

@@ -1,0 +1,96 @@
+{
+  "fpsLimit": 25,
+  "pauseOnOutsideViewport": true,
+  "fullScreen": {
+    "zIndex": -1
+  },
+  "interactivity": {
+    "events": {
+      "onClick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "onHover": {
+        "enable": true,
+        "mode": "grab",
+        "parallax": {
+          "enable": true,
+          "force": 60
+        }
+      }
+    },
+    "modes": {
+      "bubble": {
+        "distance": 300,
+        "duration": 2,
+        "opacity": 0.75,
+        "size": 40
+      },
+      "grab": {
+        "distance": 250
+      }
+    }
+  },
+  "particles": {
+    "color": {
+      "value": "#ffffff6e"
+    },
+    "links": {
+      "color": {
+        "value": "#ffffff3f"
+      },
+      "distance": 150,
+      "enable": true,
+      "opacity": 0.4
+    },
+    "move": {
+      "attract": {
+        "rotate": {
+          "x": 600,
+          "y": 1200
+        }
+      },
+      "enable": true,
+      "outModes": {
+        "bottom": "out",
+        "left": "out",
+        "right": "out",
+        "top": "out"
+      }
+    },
+    "number": {
+      "value": 30,
+      "density": {
+        "enable": true
+      }
+    },
+    "opacity": {
+      "random": {
+        "enable": true
+      },
+      "value": {
+        "min": 0.1,
+        "max": 0.5
+      },
+      "animation": {
+        "enable": true,
+        "speed": 2,
+        "minimumValue": 0.1
+      }
+    },
+    "size": {
+      "random": {
+        "enable": true
+      },
+      "value": {
+        "min": 0.1,
+        "max": 10
+      },
+      "animation": {
+        "enable": true,
+        "speed": 20,
+        "minimumValue": 0.1
+      }
+    }
+  }
+}

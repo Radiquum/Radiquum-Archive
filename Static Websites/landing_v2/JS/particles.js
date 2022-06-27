@@ -1,0 +1,1 @@
+tsParticles.loadJSON('particles', 'JS/particles.json')
