@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/static/fonts/Inter/Inter-VariableFont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fira Mono Bold';
+    src: url('/static/fonts/Fira_Mono/FiraMono-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fira Mono Medium';
+    src: url('/static/fonts/Fira_Mono/FiraMono-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    src: url('/static/fonts/Fira_Mono/FiraMono-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bio {
+    font-family: 'Fira Mono', monospace;
+}
+
+#track-name::after {
+    content: '';
+    display: inline-block;
+    margin-left: 4px;
+    width: 8px;
+    height: 24px;
+    background-color: var(--cursor-color, transparent);
+    -webkit-animation: var(--cursor-animation, none) 1s infinite;
+            animation: var(--cursor-animation, none) 1s infinite;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
